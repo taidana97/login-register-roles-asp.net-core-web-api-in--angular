@@ -1,0 +1,8 @@
+Microsoft.AspNetCore.Cors
+// Package Microsoft.AspNetCore.Cors
+            services.AddCors();
+
+// Package Microsoft.AspNetCore.Cors
+            app.UseCors(builder=> {
+                builder.WithOrigins("http://localhost:4200/").AllowAnyHeader().AllowAnyMethod();
+            });
